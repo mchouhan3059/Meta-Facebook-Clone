@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+a {
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mainarea {
+    width: 100%;
+}
+
+.fixedspace {
+    width: 1320px;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    padding: 25px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo svg {
+    width: 100%;
+}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuleft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftmenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftmenu li {
+    padding: 0 20px;
+}
+
+.rightsupport {
+    display: flex;
+    align-items: center;
+}
+
+.mi {
+    border-left: 1px solid #1c2b33;
+    padding: 15px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.mi input {
+    width: 60%;
+    padding: 10px;
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #67788a;
+    outline: none;
+    font-size: 20px;
+}
+
+.flexi {
+    display: flex;
+}
+
+
+.pohs>a>i,
+.OurTech>a>i,
+.AboutUs>a>i,
+.Build_with_us>a>i,
+.Supportli>a>i {
+    transition: 1s;
+}
+
+.pohs:hover i,
+.OurTech:hover i,
+.AboutUs:hover i,
+.Build_with_us:hover i,
+.Supportli:hover i {
+    transform: rotate(-180deg);
+}
+
+
+.subhead {
+    color: #67788a;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.shop {
+    width: calc(100% - 190px);
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 50px;
+    line-height: 30px;
+    padding-left: 140px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 0.1px #aaaaaa;
+    background-color: white;
+}
+
+.span{
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+    bottom: 0px;  
+    right: 0px;
+    transition: 2s;
+    position: absolute;
+}
+.shop ul li:hover .span,
+.border1 li:hover .border1>li>a>.span 
+{
+    width: 100%;  
+    right: auto;
+}
+
+.shop li a,
+.border1 li a{
+    position: relative;
+    overflow: hidden;
+    width:100%;
+}
+
+
+
+
+
+.shop>.flexi>ul {
+    margin-left: 20px;
+}
+
+.shop img {
+    width: 190px;
+    margin: 20px 0;
+}
+
+.flexi>ul {
+    margin-right: 40px;
+}
+
+.flexi>ul>li {
+    font-size: 14px;
+}
+
+.shop:hover {
+    width: calc(100%-190px);
+}
+
+.pohs:hover .shop,
+.OurTech:hover .shop,
+.Aboutus:hover .shop,
+.Build_with_us:hover .shop,
+.supportli:hover .shop,
+.mi:hover .shop {
+    display: block;
+}
+
+.section-1 {
+    padding: 30px 0;
+}
+
+.section-1 h1 {
+    font-size: 48px;
+    color: #666;
+    font-weight: normal;
+    margin: 15px 0 25px 0;
+}
+
+.section-1 h2 {
+    font-size: 24px;
+    color: #666;
+    margin: 25px 0 15px 0;
+}
+
+.contant {
+    flex-basis: 50%;
+    margin-bottom: 15px;
+}
+
+.bigmage {
+    overflow: hidden;
+}
+
+.bigmage img {
+    width: 100%;
+    transition: 1s;
+    overflow: hidden;
+    margin: 35px 0;
+}
+
+.bigmage img:hover {
+    transform: scale(1.05)
+}
+
+.contentage {
+    flex-basis: 40%;
+    margin-left: 5%;
+}
+
+.specialunderborderheading{
+    margin-bottom: 10px;
+}
+.specialunderborderheading h4 {
+    display: inline;
+    border-bottom: 2px solid #0074ee;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+.newlink h2 {
+    color: black;
+    font-size: 48px;
+
+}
+
+.newlink p {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.rightage {
+    width: 100%;
+}
+
+.lefty {
+    flex-basis: 55%;
+}
+
+.righty {
+    flex-basis: 43%;
+    margin-left: 2%;
+}
+.boxi{
+    line-height: 30px;
+    margin: 35px 0;
+}
+.boxi h3{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.boxi p{
+    font-size: 15px;
+    color: #666;
+}
+.righty img{
+    width: 100%;
+}
+.date{
+    font-size: 13px;
+}
+.section-2{
+    background-color: #f1f2f4;
+}
+.half_left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 45px;
+    line-height: 40px;
+    flex-grow: 1;
+}
+.half_left p{
+    font-size: 18px;
+    color: #666;
+}
+.halfright{
+    flex-grow: 1;
+}
+.section-3{
+    padding-top: 100px;
+}
+.shopi{
+    line-height: 30px;
+}
+.shopi a:hover{
+    color: #666;
+}
+.foot{
+    margin-bottom: 30px;
+}
+.add{
+    line-height: 30px;
+    justify-content: space-between;
+}
+.add h3{
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+.shopi ul li a{
+    color: #666;
+}
+.newfixedspace{
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+.absocontent{
+    position: absolute;
+    left: -250px;
+    top: 100px;
+}
+.tophi{
+    margin-bottom: 50px;
+}
+.left3{
+    flex-basis: 60%;
+}
+.right3{
+    margin-left: 5%;
+    flex-basis: 30%;
+}
+.right3 img{
+    width: 100%;
+}
+
+.Seamore{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #d5dade;
+    padding: 25px 0;
+}
+.Seamore a{
+    padding: 5px;
+    color: #666;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.section-4{
+    background-color: #f1f2f4;
+    padding: 20px 0;
+}
+.press li{
+    padding: 20px 100px;
+}
+.press li a{
+    color: #666;
+}
+.section-5{
+    width: 100%;
+    display: flex;
+    margin: 50px 0;
+}
+.logoji{
+    margin: 0 200px;
+}
+.logoji svg{
+    margin-bottom: 40px;
+}
+.logoji p{
+    color: #666;
+    margin: 20px 0;
+    font-size: 14px;
+    
+}
+.social li{
+    margin: 5px;
+    padding-right: 15px;
+}
+.social i{
+    width: 26px;
+    height: 26px;
+    font-size: 24px;
+    border-radius: 50%;
+}
+.listaji,
+.listaji ul{
+    margin-bottom: 20px;
+}
+.section-4-last{
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.section-4-last a,.section-4-last span{
+    margin-right: 50px;
+    color: #666;
+}
+.rightbottom{
+    display: flex;
+    align-items: center;
+}
+.rightbottom i{
+    font-style: normal;
+    margin: 0 2px;
+}
+.dropup{
+    width: 165px;
+    display: none;
+    border: 1px solid;
+    position: absolute;
+    right: 50px;
+    bottom: 7px;
+    padding: 5px 10px;
+    box-shadow: 5px 5px 5px 0.2px rgb(199, 199, 199);
+}
+.parent{
+    position: relative;
+}
+.rightbottom:hover .dropup{
+    display: block;
+}
